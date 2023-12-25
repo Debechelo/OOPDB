@@ -41,9 +41,8 @@ func (a *Aircraft) TakeOff(altitude int) {
 	}
 }
 
-// здесь костыль потому что я принимаю скорость за высоту
-func (a *Aircraft) Accelerate(speed int) {
-	fmt.Printf("Aircraft took off on altitude: %d \n", speed)
+func (a *Aircraft) Accelerate(altitude int) {
+	fmt.Printf("Aircraft took off on altitude: %d \n", altitude)
 }
 
 func (a *Aircraft) Land() {
